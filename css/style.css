@@ -30,7 +30,7 @@ a {
 	-moz-transition:all 0.5s;
 	-o-transition:all 0.5s;
 	transition:all 0.5s;
-	border-bottom: 1px dashed;
+	border-bottom: None;
 	outline:none!important;
 }
 a:hover,a:focus,a:active {
@@ -139,7 +139,7 @@ h6 {
 	margin:2.33em 0;
 }
 abbr[title] {
-	border-bottom:1px dotted;
+	border-bottom:None;
 }
 b,strong {
 	font-weight:bold;
@@ -324,83 +324,33 @@ table {
 	padding-top: 138px;
 }
 /* ==========================================================================Navigation========================================================================== */
-.menu-wrap a {
-	color:#555d7c;
-	outline:none!important;
-}
-.menu-wrap a:hover,.menu-wrap a:focus {
-	color: #E04343;
-}
-.content-wrap {
-	overflow-y:scroll;
-	-webkit-overflow-scrolling:touch;
-	-webkit-transition:-webkit-transform 0.4s;
-	transition:transform 0.4s;
-	-webkit-transition-timing-function:cubic-bezier(0.7,0,0.3,1);
-	transition-timing-function:cubic-bezier(0.7,0,0.3,1);
-}
-.content {
-	position:relative;
-	background:#b4bad2;
-	padding-bottom: 12em;
-}
-/* Common styles for menu button and menu-wrap */
-.menu-button,.menu-wrap {
-	position:fixed;
-	width:2.5em;
-	height:2.25em;
-	font-size:1.5em;
-	-webkit-transform:translate3d(1.5em,1.5em,0);
-	transform: translate3d(1.5em,1.5em,0);
-}
-/* Menu Button */
-.menu-button {
-	z-index:1000;
-	margin:0;
-	padding:0;
-	border:none;
-	text-indent:2.5em;
-	color:transparent;
-	background:transparent;
-}
-.menu-button::before {
-	position:absolute;
-	top:0.5em;
-	right:0.5em;
-	bottom:0.5em;
-	left:0.5em;
-	background: linear-gradient(#B67352 20%,rgba(0, 0, 0, 0) 20%,rgba(0, 0, 0, 0) 40%,#B67352 40%,#B67352 60%,rgba(0, 0, 0, 0) 60%,rgba(0, 0, 0, 0) 80%,#B67352 80%);
-	content:'';
-}
-.menu-button:hover {
-	opacity: 0.6;
-}
-/* Menu */
-.menu-wrap {
-	z-index:999;
-	background: rgba(255, 255, 255, 1);
-	-webkit-transition:width 0.4s,height 0.4s,-webkit-transform 0.4s;
-	transition:width 0.4s,height 0.4s,transform 0.4s;
-	-webkit-transition-timing-function:cubic-bezier(0.7,0,0.3,1);
-	transition-timing-function:cubic-bezier(0.7,0,0.3,1);
-}
+
+
+
 .menu {
-	height:100%;
-	overflow:hidden;
+
+	/* overflow:hidden; */
 	font-size:0.75em;
+	position: fixed;
+	top:0;
+	z-index: 100;
+	margin-right: 200px;
+	background-color: #CD8D7A;
+	width: 100%
+
 }
 .icon-list {
 	float:right;
-	padding:2.5em 2em 0 6em;
+	padding:2.5em 2em 2em 6em;
 }
 .icon-list a {
-	opacity:0;
+	opacity:1;
 	display:inline-block;
 	padding:0 0.2em;
 	margin:0 15px;
 	text-align:center;
-	font-size:1.2em;
-	color: #353535;
+	font-size:2.2em;
+	color: #C3E2C2;
 }
 .icon-list a span {
 	display:block;
@@ -410,53 +360,36 @@ table {
 	font-weight:700;
 	padding-top: 0.5em;
 }
-/* Shown menu */
-.show-menu .content-wrap {
-	-webkit-transition-delay:0s;
-	transition-delay:0s;
-	-webkit-transform:translate3d(0,125px,0);
-	transform:translate3d(0,125px,0);
+
+.icon-list-home {
+	float:left;
+	padding:3em 2em 2em 2em;
 }
-.show-menu .menu-wrap {
-	width:100%;
-	height:125px;
-	-webkit-transform:translate3d(0,0,0);
-	transform:translate3d(0,0,0);
-	-webkit-transition-delay:0s;
-	transition-delay:0s;
-	border-bottom: 1px solid #E04343;
-}
-.show-menu .icon-list a {
+.icon-list-home a {
 	opacity:1;
-	-webkit-transition:opacity 0.4s 0.4s;
-	transition:opacity 0.4s 0.4s;
+	display:inline-block;
+	margin:0 15px;
+	text-align:center;
+	font-size:3.2em;
+	color: #C3E2C2;
+	padding:0 0.2em;
 }
-.show-menu .icon-list a:nth-child(2) {
-	-webkit-transition-delay:0.42s;
-	transition-delay:0.42s;
+.icon-list-home a span {
+	display:block;
+	text-transform:uppercase;
+	letter-spacing:2px;
+	font-size:0.5em;
+	font-weight:700;
+	padding-top: 0.5em;
 }
-.show-menu .icon-list a:nth-child(3) {
-	-webkit-transition-delay:0.44s;
-	transition-delay:0.44s;
-}
-.show-menu .icon-list a:nth-child(4) {
-	-webkit-transition-delay:0.46s;
-	transition-delay:0.46s;
-}
-.show-menu .icon-list a:nth-child(5) {
-	-webkit-transition-delay:0.48s;
-	transition-delay:0.48s;
-}
-.show-menu .icon-list a:nth-child(6) {
-	-webkit-transition-delay:0.5s;
-	transition-delay: 0.5s;
-}
+
+
 /* ==========================================================================Hero========================================================================== */
 .hero {
 	background-size: contain;
 	padding:110px 0 100px 0;
 	height:auto;
-	background-color: #FDF0D1;
+	background-color: #EAECCC;
 }
 .hero h1 {
 	font-size: 120px;
@@ -464,11 +397,11 @@ table {
 	margin: 0;
 	font-weight: 600;
 	line-height: 95px;
-	color: #85586F;
+	color: #DBCC95;
 	text-transform: uppercase;
 }
 .hero h1 span {
-	color:#FDF0D1;
+	color:#EAECCC;
 	/* display:inline-block; */
 }
 .hero h3 {
@@ -476,14 +409,14 @@ table {
 	margin:0;
 	padding:0;
 	opacity:0.5;
-	color: #643843;
+	color: #C3E2C2;
 	letter-spacing: 18px;
 	line-height: 50px;
 	text-transform: uppercase;
 }
 .hero p {
 	letter-spacing:1px;
-	color:#FDF0D1;
+	color:#EAECCC;
 	font-size: 15px;
 }
 /* Boucing Arrow Animation */
@@ -578,7 +511,7 @@ h1.arrow span {
 	background-size:cover;
 }
 .color-bg {
-	background: #85586F;
+	background: #C3E2C2;
 }
 
 .color-bg a {
@@ -611,7 +544,7 @@ h1.arrow span {
     color: #FFE800;
 }
 .color-bg h1.arrow {
-    color: #FDF0D1;
+    color: #C3E2C2;
 }
 /* ==========================================================================Services========================================================================== */
 .services {
@@ -828,7 +761,7 @@ img.grayscale:hover {
 	padding-top:75px;
 }
 .subscribe h1 {
-	color: #FDF0D1FDF0D1;
+	color: #FDF0D1;
 	margin-bottom:40px;
 }
 .subscribe h1 span {
@@ -869,7 +802,7 @@ img.grayscale:hover {
 }
 /* ==========================================================================CTA========================================================================== */
 .spacer-cta {
-	background-color: #85586F;
+	background-color: #CD8D7A;
 	padding:70px 0;
 }
 .outline-btn {
@@ -1213,16 +1146,6 @@ ul.slides li {
 	.effects .img {
     	margin-bottom: 15px;
 	}
-	.show-menu .icon-list a {
-		display: block;
-		width: 100%;
-		float: left;
-		margin-bottom: 10px;
-	}
-
-	.show-menu .menu-wrap {
-		height: 100%;
-	}
 }
 
 
@@ -1238,8 +1161,8 @@ ul.slides li {
 
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
-	background-color: #AC7D88;
-	color:#85586F;
+	background-color: #C3E2C2;
+	color:#CD8D7A;
 	cursor: pointer;
 	padding: 18px;
 	width: 100%;
@@ -1251,18 +1174,20 @@ ul.slides li {
 	letter-spacing: 6px;
 	padding-bottom:30px;
 	font-weight: bold;
+	margin-bottom: 40px;
   }
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active, .collapsible:hover {
-	background-color: #643843;
+	background-color: #A3C2A2;
   }
   
   /* Style the collapsible content. Note: hidden by default */
   .content {
 	padding: 0 18px;
-	background-color: #FDF0D1;
+	background-color: #EAECCC;
 	max-height: 0;
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;
   }
+
