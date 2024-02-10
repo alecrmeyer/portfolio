@@ -350,7 +350,7 @@ table {
 	margin:0 15px;
 	text-align:center;
 	font-size:2.2em;
-	color: #C3E2C2;
+	color: #DBCC95;
 }
 .icon-list a span {
 	display:block;
@@ -371,7 +371,7 @@ table {
 	margin:0 15px;
 	text-align:center;
 	font-size:3.2em;
-	color: #C3E2C2;
+	color: #DBCC95;
 	padding:0 0.2em;
 }
 .icon-list-home a span {
@@ -409,7 +409,7 @@ table {
 	margin:0;
 	padding:0;
 	opacity:0.5;
-	color: #C3E2C2;
+	color: #CD8D7A;
 	letter-spacing: 18px;
 	line-height: 50px;
 	text-transform: uppercase;
@@ -492,12 +492,12 @@ table {
 	margin:50px 0 0;
 }
 h1.arrow {
-	font-size: 40px;
+	font-size: 45px;
 	text-transform:uppercase;
-	color:#643843;
+	color:#DBCC95;
 	letter-spacing: 6px;
 	padding-bottom:30px;
-	font-weight: bold;
+	font-weight: bolder;
 }
 h1.arrow span {
     color: #ECB159;
@@ -544,7 +544,7 @@ h1.arrow span {
     color: #FFE800;
 }
 .color-bg h1.arrow {
-    color: #C3E2C2;
+    color: #DBCC95;
 }
 /* ==========================================================================Services========================================================================== */
 .services {
@@ -573,8 +573,8 @@ h1.arrow span {
 	border: 1px solid #E04343;
 }
 .services .item [class*=fa] {
-	-webkit-transition:all .3s ease-out;
-	transition:all .3s ease-out;
+	/* -webkit-transition:all .3s ease-out;
+	transition:all .3s ease-out; */
 }
 .services .item:hover [class*=fa] {
 	-webkit-transform:scale(1.2);
@@ -802,7 +802,7 @@ img.grayscale:hover {
 }
 /* ==========================================================================CTA========================================================================== */
 .spacer-cta {
-	background-color: #CD8D7A;
+	background-color: #C3E2C2;
 	padding:70px 0;
 }
 .outline-btn {
