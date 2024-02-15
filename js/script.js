@@ -144,3 +144,37 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
+function R1Change() { 
+    var elem = document.getElementById("python");
+    elem.style.backgroundColor = 'yellow';
+    return false; 
+}
+
+var intervalID;
+function fadeKeyword(keyword) {
+	function fade() {
+		var alpha = 0;
+		clearInterval(intervalID); 
+		var direction = 0
+		var intervalID = setInterval(hide, 20); 
+		function hide(){ 
+			var elem = document.getElementById(keyword); 
+			console.log("Wtf");			
+			if(direction == 0)
+			{
+				alpha=alpha+0.03; 
+				elem.style.backgroundColor = 'rgba(255, 255, 0, ' + alpha + ')';
+				direction = alpha > 1; 
+			}
+			else if(alpha > 0 && direction == 1)
+			{ 
+				alpha=alpha-0.01; 
+				elem.style.backgroundColor = 'rgba(255, 255, 0, ' + alpha + ')';
+			} 
+			else{ 
+				clearInterval(intervalID); 
+			} 
+		} 
+	}
+	setTimeout(fade, 1000);
+}
