@@ -2,22 +2,6 @@
 
 
 
-/* ///////////////////////////////////////////////////////////////////// 
-// 03 - Preloader
-/////////////////////////////////////////////////////////////////////*/
-
-#preloader {
-    position:fixed;
-    left:0;
-    top:0;
-    z-index:99999999999;
-    width:100%;
-    height:100%;
-    overflow:visible;
-    background: #FDF0D1 url('../img/preloader.gif') no-repeat center center;
-}
-
-
 
 
 
@@ -45,13 +29,6 @@ p {
 	font-size:14px;
 }
 
-h2::after {
-	content:" ";
-	border:solid 1px #CCCCCC;
-	display:block;
-	width:65px;
-	margin:20px auto;
-}
 h6 {
 	font-size:15px;
 	color:#8c8c8c;
@@ -422,7 +399,20 @@ table {
 	text-transform:uppercase;
 	font-weight:bold;
 	background-color: #DBCC95;
+	padding: 5px;
+	border-radius: 15px;
+	padding: 18px;
 	
+}
+
+.hero h2 span {
+	color: #EAECCC;
+	font-size: 20px
+}
+
+.hero h2 a {
+	color: #C3E2C2;
+	font-size: 16px
 }
 
 .work {
@@ -431,8 +421,9 @@ table {
 	border-bottom-right-radius: 15px;
 	padding: 5px;
 	margin-bottom: 20px;
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5)	
+} 
 
-}
 .work ul {
 	color:#CD8D7A;
 
@@ -446,9 +437,23 @@ table {
 	border-top-right-radius: 15px;
 	border-top-left-radius: 15px;
 	padding: 10px;
-
+	box-shadow: 0px 2px 5px 0px rgb(192, 95, 65)
 
 }
+
+.spacer h3{
+	font-size:24px;
+	color:#CD8D7A;
+	text-transform:uppercase;
+	font-weight:bold;
+	background-color: #C3E2C2;
+	padding: 5px;
+	border-radius: 15px;
+	padding: 18px;
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5)	
+}
+
+
 
 
 /* Boucing Arrow Animation */
@@ -835,7 +840,8 @@ img.grayscale:hover {
 /* ==========================================================================CTA========================================================================== */
 .spacer-cta {
 	background-color: #CD8D7A;
-	padding:70px 0;
+	padding:40px 0;
+	
 }
 .outline-btn {
 	display:inline-block;
@@ -1207,6 +1213,7 @@ ul.slides li {
 	font-weight: bold;
 	margin-bottom: 40px;
 	border-radius: 15px;
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5)
   }
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -1231,5 +1238,30 @@ ul.slides li {
 	text-align:center;
 	font-size:2.2em;
 	color: #A3C2A2;
+  }
+
+  .picture {
+	width: 275px;
+	height: 375px;
+	float: right;
+  }
+  .image-background {
+	background-image: "img/me.png";
+	width: 275px;
+	height: 375px;
+  }
+
+  .button-skill {
+	background-color: #A3C2A2; /* Green */
+	border: none;
+	color: #CD8D7A;
+	padding: 6px 12px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 24px;
+	font-weight: bold;
+	border-radius: 15px;
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5)	
   }
 
