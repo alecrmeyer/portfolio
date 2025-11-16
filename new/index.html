@@ -1,0 +1,362 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alec Meyer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Work Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="particles">
+            <div class="particle" style="width: 100px; height: 100px; top: 20%; left: 10%; animation-delay: 0s;"></div>
+            <div class="particle" style="width: 60px; height: 60px; top: 60%; left: 80%; animation-delay: 2s;"></div>
+            <div class="particle" style="width: 80px; height: 80px; top: 40%; left: 60%; animation-delay: 4s;"></div>
+            <div class="particle" style="width: 120px; height: 120px; top: 70%; left: 20%; animation-delay: 6s;"></div>
+        </div>
+        <div class="hero-content">
+            <h1>Hey, I'm Alec Meyer</h1>
+            <p class="subtitle">Data Scientist | Software Engineer | Musician</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <p style="text-align: center; font-size: 1.2rem; line-height: 1.8; color: var(--gray); max-width: 800px; margin: 0 auto;">
+            I'm a passionate professional dedicated to creating exceptional digital experiences. 
+            With expertise in design and development, I bring ideas to life through innovative solutions 
+            and attention to detail. Let's collaborate to build something amazing together.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">Skills</h2>
+    <div class="skills-grid" style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; padding: 2rem 0;">
+        <button class="button-skill skill-btn" data-skill="python">Python</button>
+        <button class="button-skill skill-btn" data-skill="cpp">C++</button>
+        <button class="button-skill skill-btn" data-skill="java">Java</button>
+    </div>
+    </section>
+
+    <section id="experience">
+        <h2 class="section-title">Work Experience</h2>
+        <div class="experience-container" style="max-width: 900px; margin: 0 auto;">
+            <div class="wp2 experience-entry">
+                <button class="experience-header" onclick="toggleExperience(this)">
+                    <div style="display: flex; flex-direction: column; flex-grow: 1; text-align: left;">
+                        <span class="work-title">Software Engineer</span>
+                        <span style="display: flex; align-items: center; margin-top: 2px;">
+                            <span class="work-company">Collins Aerospace</span>
+                            <span style="flex: 1 1 auto;"></span>
+                            <span class="work-date">2022 - Present</span>
+                        </span>
+                    </div>
+                    <span class="expand-icon">+</span>
+                </button>
+                <div class="work experience-details" style="display: none;">
+                    <ul>
+                        <li>Identifying and resolving deficiencies in the software development process resulting in a budget savings of 16%</li>
+                        <li>Developing milestones and Identifying project risks increasing team efficiency by 98%</li>
+                        <li>Scrum Master for a team of 8 engineers</li>
+                        <li>Organizing and leading AGILE ceremonies such as PI Planning, Sprint Planning, Retrospectives and Daily Standups</li>
+                        <li>Developing and engineering new aircraft display pages for pilots using <span class="tech-badge" data-tech="cpp">C++</span></li>
+                        <li>Writing software requirements in IBM DOORS and JAMA using EARS standards</li>
+                        <li>Creating and maintaining software design documentation</li>
+                        <li>Maintaining the project teams KPI sheet to show any budget deviations</li>
+                        <li>Using <span class="tech-badge" data-tech="python">Python</span> to develop, modify and execute verification tests</li>
+                        <li>Developed a unit test suite with 200+ cases in <span class="tech-badge" data-tech="cpp">C++</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="wp2 experience-entry">
+                <button class="experience-header" onclick="toggleExperience(this)">
+                    <div style="display: flex; flex-direction: column; flex-grow: 1; text-align: left;">
+                        <span class="work-title">Software Engineer</span>
+                        <span style="display: flex; align-items: center; margin-top: 2px;">
+                            <span class="work-company">Maverick Software Consulting</span>
+                            <span style="flex: 1 1 auto;"></span>
+                            <span class="work-date">2020 - 2022</span>
+                        </span>
+                    </div>
+                    <span class="expand-icon">+</span>
+                </button>
+                <div class="work experience-details" style="display: none;">
+                    <ul>
+                        <li>Collaborated on a team with 5 other engineers in an AGILE environment</li>
+                        <li>Contributed to and maintained a Selenium JUnit test suite with over 1200 tests for Thomson Reuters software</li>
+                        <li>Used REST APIs for automative testing of backend calls</li>
+                        <li>Utilized SQL to query data from large relational databases</li>
+                        <li>Utilized Azure DevOps and Jenkins to improve workflow</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="wp2 experience-entry">
+                <button class="experience-header" onclick="toggleExperience(this)">
+                    <div style="display: flex; flex-direction: column; flex-grow: 1; text-align: left;">
+                        <span class="work-title">Teaching Assistant</span>
+                        <span style="display: flex; align-items: center; margin-top: 2px;">
+                            <span class="work-company">Iowa State University</span>
+                            <span style="flex: 1 1 auto;"></span>
+                            <span class="work-date">2020 - 2021</span>
+                        </span>
+                    </div>
+                    <span class="expand-icon">+</span>
+                </button>
+                <div class="work experience-details" style="display: none;">
+                    <ul>
+                        <li>Taught and mentored students in object-oriented programming concepts</li>
+                        <li>Graded assignments and provided constructive feedback on code quality and design patterns</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">🚀</div>
+                <div class="project-content">
+                    <h3>Project One</h3>
+                    <p style="color: var(--gray); margin-bottom: 1rem;">A cutting-edge web application that revolutionizes user interaction with advanced features.</p>
+                    <a href="#" style="color: var(--accent); text-decoration: none; font-weight: 600;">Learn More →</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">🎯</div>
+                <div class="project-content">
+                    <h3>Project Two</h3>
+                    <p style="color: var(--gray); margin-bottom: 1rem;">An innovative solution designed to streamline workflows and boost productivity.</p>
+                    <a href="#" style="color: var(--accent); text-decoration: none; font-weight: 600;">Learn More →</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">✨</div>
+                <div class="project-content">
+                    <h3>Project Three</h3>
+                    <p style="color: var(--gray); margin-bottom: 1rem;">A beautiful platform that combines aesthetics with powerful functionality.</p>
+                    <a href="#" style="color: var(--accent); text-decoration: none; font-weight: 600;">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Skill Popup Modal -->
+    <div id="skillModal" class="skill-modal">
+        <div class="skill-modal-content">
+            <div class="skill-modal-header">
+                <h2 class="skill-modal-title" id="skillTitle">Skill Name</h2>
+                <button class="skill-modal-close" onclick="closeSkillModal()">&times;</button>
+            </div>
+            <p class="skill-modal-description" id="skillDescription">Skill description goes here.</p>
+            <div class="skill-modal-experience" id="skillExperience">
+                Experience details go here.
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Expand/collapse work experience entries
+        function toggleExperience(btn) {
+            const entry = btn.closest('.experience-entry');
+            const details = entry.querySelector('.experience-details');
+            const icon = btn.querySelector('.expand-icon');
+            const isCurrentlyOpen = details.style.display === 'block';
+            if (isCurrentlyOpen) {
+                details.style.display = 'none';
+                icon.textContent = '+';
+            } else {
+                details.style.display = 'block';
+                icon.textContent = '−';
+            }
+        }
+        // Navbar scroll effect
+            // Skill descriptions and experience
+            const skillData = {
+                python: {
+                    title: "Python",
+                    description: "Proficient in Python for data science, machine learning, verification testing, and automation. I use Python to develop and execute test suites, work with data analysis libraries, and build automation scripts.",
+                    experience: "<strong>Experience:</strong> Developed and executed verification test suites using Python. Worked with pandas, NumPy, and scikit-learn for data science projects. Created automation scripts for process optimization and testing pipelines."
+                },
+                cpp: {
+                    title: "C++",
+                    description: "Expert-level C++ developer with extensive experience in embedded systems and application development. Proficient in building high-performance software, managing memory efficiently, and following industry standards.",
+                    experience: "<strong>Experience:</strong> Developed aircraft display pages for pilots using modern C++. Built comprehensive unit test suites with 200+ test cases. Experienced with AGILE development practices and collaborative software engineering."
+                },
+                java: {
+                    title: "Java",
+                    description: "Experienced Java developer with knowledge in enterprise applications and object-oriented programming principles. I have taught Java concepts and am comfortable with both backend development and testing frameworks.",
+                    experience: "<strong>Experience:</strong> Teaching Assistant for Object Oriented Programming courses. Experience with Java testing frameworks and best practices in OOP design patterns."
+                }
+            };
+
+            // Navbar scroll effect
+            window.addEventListener('scroll', () => {
+                const navbar = document.querySelector('.navbar');
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+
+            // Smooth scrolling
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Form submission
+            function handleSubmit(e) {
+                e.preventDefault();
+                alert('Thank you for your message! I will get back to you soon.');
+                e.target.reset();
+            }
+
+            // Intersection Observer for animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -100px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.skill-card, .project-card').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(el);
+            });
+
+            // Skill highlighting functionality and popup
+            const skillButtons = document.querySelectorAll('.skill-btn');
+            let currentActiveSkill = null;
+
+            skillButtons.forEach(button => {
+                button.addEventListener('click', (e) => {
+                    const skill = button.getAttribute('data-skill');
+                
+                    // Show popup with skill details
+                    showSkillModal(skill);
+                
+                    // Remove previous highlighting
+                    if (currentActiveSkill) {
+                        document.querySelectorAll(`.tech-badge[data-tech="${currentActiveSkill}"]`).forEach(badge => {
+                            badge.style.backgroundColor = 'transparent';
+                            badge.style.padding = '0';
+                            badge.style.borderRadius = '0';
+                            badge.style.fontWeight = 'normal';
+                        });
+                    
+                        document.querySelectorAll('.skill-btn').forEach(btn => {
+                            btn.style.backgroundColor = '#2563eb';
+                            btn.style.boxShadow = 'none';
+                        });
+                    }
+                
+                    // If clicking the same skill, toggle off
+                    if (currentActiveSkill === skill) {
+                        currentActiveSkill = null;
+                    } else {
+                        // Highlight the new skill
+                        currentActiveSkill = skill;
+                    
+                        // Highlight tech badges in experience section
+                        document.querySelectorAll(`.tech-badge[data-tech="${skill}"]`).forEach(badge => {
+                            badge.style.backgroundColor = 'rgba(96, 165, 250, 0.3)';
+                            badge.style.padding = '0.2rem 0.5rem';
+                            badge.style.borderRadius = '4px';
+                            badge.style.fontWeight = 'bold';
+                            badge.style.transition = 'all 0.3s ease';
+                        });
+                    
+                        // Highlight the clicked button
+                        button.style.backgroundColor = '#60a5fa';
+                        button.style.boxShadow = '0 0 15px rgba(96, 165, 250, 0.5)';
+                    }
+                });
+            });
+
+            // Skill Modal Functions
+            function showSkillModal(skill) {
+                const modal = document.getElementById('skillModal');
+                const skillInfo = skillData[skill];
+            
+                if (skillInfo) {
+                    document.getElementById('skillTitle').textContent = skillInfo.title;
+                    document.getElementById('skillDescription').textContent = skillInfo.description;
+                    document.getElementById('skillExperience').innerHTML = skillInfo.experience;
+                
+                    modal.classList.add('active');
+                }
+            }
+
+            function closeSkillModal() {
+                const modal = document.getElementById('skillModal');
+                modal.classList.remove('active');
+            }
+
+            // Close modal when clicking outside the content
+            window.addEventListener('click', (e) => {
+                const modal = document.getElementById('skillModal');
+                if (e.target === modal) {
+                    closeSkillModal();
+                }
+            });
+    </script>
+</body>
+</html>

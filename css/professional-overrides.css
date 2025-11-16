@@ -1,0 +1,85 @@
+/* Professional palette override using CSS variables
+   - Centralized variables make it easy to tweak the palette.
+   - These rules intentionally override many of the original theme colors.
+*/
+
+:root {
+  --bg: #ffffff;                /* page background */
+  --surface: #ffffff;           /* cards, surfaces */
+  --text: #0f1724;              /* main text (deep slate) */
+  --muted: #6b7280;             /* muted text */
+  --primary: #2563eb;           /* primary accent (blue) */
+  --primary-600: #1d4ed8;       /* hover/darker primary */
+  --accent: #06b6d4;            /* optional secondary accent (teal) */
+  --card-shadow: 0 6px 18px rgba(15,23,42,0.06);
+}
+
+/* Base */
+html, body {
+  background: var(--bg) !important;
+  color: var(--text) !important;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* Header / menu */
+.menu {
+  background: var(--surface) !important;
+  box-shadow: 0 2px 8px rgba(15,23,42,0.06);
+  padding: 10px 20px !important;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.icon-list, .icon-list-home { padding: 0.6rem 1rem !important; }
+.icon-list a, .icon-list-home a { color: var(--muted) !important; opacity: 1 !important; }
+.icon-list a { font-size: 1.15rem !important; margin: 0 8px !important; }
+.icon-list a span { display: none; }
+
+/* Hero */
+.hero { background-color: #f8fafc !important; padding: 120px 0 80px !important; }
+.hero h1 {
+  font-size: 48px !important; letter-spacing: -0.5px !important; line-height: 1.05 !important;
+  color: var(--text) !important; text-transform: none !important; font-weight:700;
+}
+.hero h3 { font-size: 16px !important; color: var(--muted) !important; margin-top: 8px; }
+.hero p { color: var(--muted) !important; }
+
+/* Section headings */
+h1.arrow { color: var(--text) !important; font-size: 32px !important; letter-spacing: 1.5px !important; }
+
+/* Cards / work */
+.work, .work-title, .spacer h3, .spacer-cta {
+  background: var(--surface) !important; color: var(--text) !important;
+  box-shadow: var(--card-shadow) !important; border-radius: 8px !important;
+}
+.work ul { color: var(--muted) !important; }
+.work-title { background: linear-gradient(90deg, var(--surface), #f7fafc) !important; }
+
+/* Buttons */
+.button-skill, .down-arrow-btn, .collapsible {
+  background: var(--primary) !important; color: #fff !important; border-radius: 6px !important;
+  padding: 8px 14px !important; text-decoration: none !important; border: none !important; display:inline-block;
+}
+.button-skill:hover, .down-arrow-btn:hover, .collapsible:hover { background: var(--primary-600) !important; }
+
+/* Links and icons */
+a { color: var(--primary) !important; }
+.contact i { color: var(--muted) !important; font-size: 22px; margin: 0 8px; }
+
+/* Rotated text/animated text contrast */
+.rotate { color: var(--text) !important; opacity: 0.95; }
+
+/* Accessibility: ensure focus outlines are visible */
+a:focus, button:focus { outline: 3px solid rgba(37,99,235,0.15); outline-offset: 2px; }
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .menu { padding: 8px 10px !important; }
+  .hero h1 { font-size: 34px !important; }
+  .inner { padding-top: 80px !important; }
+}
+
+/* Utility: quick theme swatches (comment/uncomment to try alternatives)
+   Example: swap --primary to a teal for a different feel: --primary: #0ea5a4;
+*/
